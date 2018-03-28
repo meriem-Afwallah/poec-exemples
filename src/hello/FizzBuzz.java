@@ -9,32 +9,31 @@ public class FizzBuzz {
 		// affiche "nombre BUZZ" si nombre est multiple de 5
 		// affiche "nombre FIZZBUZZ" si nombre est multiple de 3 ET de 5
 
-	//	for (int i = 0; i <= 100; i++) {
-	//		if (i % 3 == 0) {
-	//			System.out.println(i + "FIZZ");
-	//		}
-	//		if (i % 5 == 0) {
-	//			System.out.println(i + "BUZZ");
-	//		} else if (i % 15 == 0) {
-	//			System.out.println("i + FIZZBUZZ");
-	//		} else {
-	//			System.out.println(i);
-	//		}
-	//	}
-		
-		
-		//Correction
-		
-		for (int i = 0; i <=100; i++) {
-			if((i % 3 == 0) && (i % 5 == 0)) {
+		// for (int i = 0; i <= 100; i++) {
+		// if (i % 3 == 0) {
+		// System.out.println(i + "FIZZ");
+		// }
+		// if (i % 5 == 0) {
+		// System.out.println(i + "BUZZ");
+		// } else if (i % 15 == 0) {
+		// System.out.println("i + FIZZBUZZ");
+		// } else {
+		// System.out.println(i);
+		// }
+		// }
+
+		// Correction
+
+		for (int i = 0; i <= 100; i++) {
+			if ((i % 3 == 0) && (i % 5 == 0)) {
 				System.out.println(i + "FIZZBUZZ");
-			}else if(i % 3 == 0) {
+			} else if (i % 3 == 0) {
 				System.out.println(i + "FIZZ");
 			}
 			if (i % 5 == 0) {
 				System.out.println(i + "BUZZ");
 			}
-			
+
 		}
 
 	}
