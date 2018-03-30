@@ -2,7 +2,16 @@ package hello;
 
 public class Commande {
 	
-	Article[] articles = new Article[5];
+	private Article[] articles;
+	
+
+	public void getArticles(Article[] articles) {
+		return; 
+		
+	}
+	public void setArticles(Article[] articles) {
+		this.articles = articles;
+	}
 	
 
 	public void ajouterArticle(Article article) {
@@ -10,17 +19,12 @@ public class Commande {
 		
 			for (int i = 0; i < articles.length; i++) {
 				if(articles[i] == null) {
-				 
-				}else {
-					articles[i] = article;
+				articles[i]=article; 
+				return;
 				}
-				
-				
-				
 			}
-		
-		
-	
+			
 }
+
 
 }
