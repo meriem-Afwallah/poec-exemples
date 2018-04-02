@@ -9,13 +9,13 @@ public class StrinUtilMain {
 		
 		//compte le nombre de caractère autres que espace 
 		stringUtil.countCharacters(texte);//14
-		/*
+		
 		//compte le nombre de mots ( les mots sont séparés par des espaces
 		stringUtil.countWords(texte);
 		
 		//retourne true si palindrome, false sinon
 		stringUtil.isPalindrome(texte);
-		stringUtil.ispalindrome("radar";)
+		stringUtil.ispalindrome("radar");
 		
 		//retourne true si anagramme, false sinon
 		stringUtil.isanagramme("romain", "manoir"); // true
