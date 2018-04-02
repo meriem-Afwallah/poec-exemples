@@ -6,7 +6,6 @@ public class Transaction {
 	private double amount;
 	
 	public Transaction(String type, double amount) {
-		super();
 		this.type = type;
 		this.amount = amount;
 	}

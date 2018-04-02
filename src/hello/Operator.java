@@ -26,6 +26,14 @@ public class Operator {
 		System.out.println(i);
 
 		System.out.println(5=='5');
+		// operateurs booleans
+		System.out.println(5 == 3);
+		System.out.println(5 != 3);
+		
+		System.out.println(5 >= 3);
+		System.out.println(5 > 3);
+		System.out.println(5 <= 3);
+		System.out.println(5 < 3);
 		
 		System.out.println();
 		

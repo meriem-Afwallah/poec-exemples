@@ -25,7 +25,7 @@ public class GuessANumber {
 		
 		
 		//V1.0
-		int compteur = 0; //Thomas
+		/* int compteur = 0; 
 		for(i = 1; i<=10; i++) {
 			i= sc.nextInt();
 			compteur++; // thomas
@@ -33,8 +33,25 @@ public class GuessANumber {
 			System.out.println("perdu");
 		} else {
 			System.out.println("gagné en " + compteur + " coup(s)");
+		}*/
+
+		int nombreADeviner = 8;
+		Scanner sc = new Scanner(System.in);
+		
+		int compteur = 0;
+		for (;;) {
+			
+			int choixUtilisateur = sc.nextInt();
+			compteur++;
+			
+			if (nombreADeviner == choixUtilisateur) {
+				System.out.println("Gagné en " + compteur + " coups");
+				break;
+			} else {
+				System.out.println("Perdu");
+			}
 		}	
-		}
+	}
 		
 		
 		

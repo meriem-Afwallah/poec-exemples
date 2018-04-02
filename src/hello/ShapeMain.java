@@ -9,7 +9,8 @@ public class ShapeMain {
 		Rectangle r1 = new Rectangle();
 		r1.width = 10;
 		r1.height = 50;
-		System.out.println(r1.calcArea());
+		int res = r1.calcArea();
+		System.out.println(res);
 		
 		Rectangle r2 = new Rectangle();
 		r2.width = 20;

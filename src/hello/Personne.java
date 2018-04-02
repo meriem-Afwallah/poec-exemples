@@ -13,6 +13,7 @@ public class Personne {
 		this.nom = nom;
 		this.age = age;
 	}
+	//méthodes
 	public String getFullname() {
 		
 		return prenom +" "+ nom;

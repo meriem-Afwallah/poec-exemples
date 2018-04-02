@@ -29,10 +29,10 @@ public class FizzBuzz {
 				System.out.println(i + "FIZZBUZZ");
 			} else if (i % 3 == 0) {
 				System.out.println(i + "FIZZ");
-			}
-			if (i % 5 == 0) {
+			   }
+				if (i % 5 == 0) {
 				System.out.println(i + "BUZZ");
-			}
+				}
 
 		}
 

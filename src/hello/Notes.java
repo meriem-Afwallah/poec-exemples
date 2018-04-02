@@ -12,7 +12,7 @@ public class Notes {
 
 			somme = somme + notes[i];
 		}
-		System.out.println(somme);
+		System.out.println("somme:" + somme);
 		double moyenne = (double)somme / notes.length;    // cast
 		System.out.println("la moyenne des notes est " + moyenne);
 		

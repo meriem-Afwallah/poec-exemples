@@ -13,9 +13,16 @@ public class Search {
 		for (int i = 0; i < data.length; i++) {
 			if(data[i] == 10) {
 				found = true ;
+				break; // early exit
 			}
 				
-			}
+		}
+		//if(found == true) {
+		if(found) {
+			System.out.println("trouvé");
+		} else {
+			System.out.println("pas trouvé");
+		    }
 			
 
 	}

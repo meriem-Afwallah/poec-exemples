@@ -19,11 +19,14 @@ public class PrimitivesTypes {
 		monEntierLong = 18;
 		
 		
-		//floating
+		//floating point
 		
 		float monFlottant = 1.5f;
 		double monDouble = 3.5;
-		System.out.println(0.1 + 0.2);
+
+		// http://floating-point-gui.de
+		// https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
+		System.out.println(0.1 + 0.2); // IEEE 754 !!!
 		
 		boolean monBooleen = true; // ou false 
 		
