@@ -7,31 +7,25 @@ public class StringUtil {
 		char[]tableauDeCaractere = new char[texte.length()];
 		
 		for (int i = 0; i < tableauDeCaractere.length; i++) {
-			tableauDeCaractere[i] = texte.charAt(i);
-		}
-		for (int i = 0; i < tableauDeCaractere.length; i++) {
 			if(tableauDeCaractere[i]!=' ') {
-				counterOfCharacters += tableauDeCaractere[i];
-			}else {
-				tableauDeCaractere[i]++;
+				counterOfCharacters ++;
 			}
 			
 		}
 		return counterOfCharacters;
-		
-		
+			
 	}
 	public int countWords(String texte) {
 		int counterWords = 0;
-		char space = ' ';
 		int counterSpaceBar = 0;
-		
+		String []tableauDeMots = new String[texte.length()];
+
 		for(int i = 0; i < texte.length(); i++) {
-			if(space ==TRUE) {
+			if(texte.charAt(i) == ' ') {
 				counterSpaceBar ++ ; 
 			}
 		}
-		counterWords = texte.length() - counterSpacebar;
+		counterWords = texte.length() - counterSpaceBar;
 		
 		return counterWords;
 	}
@@ -47,6 +41,16 @@ public class StringUtil {
 
 		  return true;
 		}
+	
+	boolean isanagramme(String texte1, String texte2) {
+		
+		
+		
+		return true;
+		
+		
+		
+	}
 	
 	
 }
