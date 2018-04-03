@@ -24,9 +24,9 @@ public class TTTGrid {
 				System.out.println("-----------");
 				System.out.println("|" + tabTTT[0][0] + " |  |  |");
 				System.out.println("-----------");
-				System.out.println("| x |  |  |");
+				System.out.println("| " + tabTTT[0][1] + " |  |  |");
 				System.out.println("-----------");
-				System.out.println("|  | x |  |");
+				System.out.println("|  |" + tabTTT[1][2] |  |");
 				System.out.println("-----------");
 				
 				
