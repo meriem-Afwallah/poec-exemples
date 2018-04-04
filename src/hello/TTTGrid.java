@@ -2,49 +2,104 @@ package hello;
 
 public class TTTGrid {
 
-	private char[][] tabTTT; 
-	
-	public TTTGrid(){
-		tabTTT= new char[3][3];	
-	}
-	
-	public void put(char symbol, int x, int y) {
-	
-		tabTTT[x][y] = symbol ;		
-			
+	private char[][] tab;
+
+	public TTTGrid(int size) {
+		tab = new char[size][size];
 	}
 
+	public void put(char c, int x, int y) {
+		tab[y][x] = c;
+	}
+
+	// public void print() {
+	// // pour toutes les lignes
+	// for(int y = 0; y < tab.length; y++) {
+	// // séparateur haut
+	// for(int i = 0; i < tab.length; i++) {
+	// System.out.print("----");
+	// }
+	// System.out.println("-");
+	//
+	// // générer une ligne
+	// for(int x = 0; x < tab.length; x++) {
+	// System.out.print("| ");
+	// if(tab[x][y] == '\u0000') {
+	// System.out.print(" ");
+	// } else {
+	// System.out.print(tab[x][y]);
+	// }
+	// System.out.print(" ");
+	// }
+	// System.out.println("|");
+	//
+	// }
+	//
+	// // dernier séparateur
+	// for(int i = 0; i < tab.length; i++) {
+	// System.out.print("----");
+	// }
+	// System.out.println("-");
+	//
+	//
+	// }
+
 	public void print() {
+		StringBuilder output = new StringBuilder();
+
+		// pour toutes les lignes
+		for (int y = 0; y < tab.length; y++) {
+			// séparateur haut
+			printSeparator(output);
+			// générer une ligne
+			printLine(y, output);
+		}
+		// dernier séparateur
+		printSeparator(output);
+
+		System.out.println(output);
+
+	}
+	
+	private void printSeparator(StringBuilder output) {
+		for (int i = 0; i < tab.length; i++) {
+			output.append("----");
+		}
+		output.append("-\n");	
+	}
+	
+	private void printLine(int y, StringBuilder output) {
+		for (int x = 0; x < tab.length; x++) {
+			output.append("| ");
+			if (tab[x][y] == '\u0000') {
+				output.append(" ");
+			} else {
+				output.append(tab[x][y]);
+			}
+			output.append(" ");
+		}
+		output.append("|\n");
+	}
+
+	
+	private boolean thereIsAWinner() {
 		
-		for (int i = 0; i < tabTTT.length; i++) {
-			for (int j = 0; j < tabTTT.length; j++) {
-				System.out.println(tabTTT[i][j]);
+		boolean win = false;
+		for (int i = 0; i < tab.length; i++) {
+			if((tab[0][i] == tab[1][i]) && (tab[1][i]==tab[2][i])
+					 ||(tab[i][0] == tab[i][1]) && (tab[i][0] == tab[i][2])
+					 ||(tab[0][0] == tab[1][1]) && (tab[0][0] == tab[2][2])) {
+				win = true;
 				
 			}
-				System.out.println("-----------");
-				System.out.println("|" + tabTTT[0][0] + " |  |  |");
-				System.out.println("-----------");
-				System.out.println("| " + tabTTT[0][1] + " |  |  |");
-				System.out.println("-----------");
-				System.out.println("|  |" + tabTTT[1][2] |  |");
-				System.out.println("-----------");
-				
-				
-				
-				
-				/*
-				-------------
-				| 0 |   |   |
-				-------------
-				| x |   |   |
-				-------------
-				|   | x |   | 
-						 */
-						
-				
-			
-			
 		}
+		return win;
+		
+		/*if(tab[0][0] == tab[0][1] && tab[0][0] == tab[0][2]) {
+					win = true;
+		}*/
+		
+		
 		
 	}
 
